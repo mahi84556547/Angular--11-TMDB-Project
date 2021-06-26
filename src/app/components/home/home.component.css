@@ -1,0 +1,59 @@
+.card-text {
+  font-size: 12px;
+}
+.card-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(/././assets/hd.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+}
+.card-container {
+  z-index: 1;
+  position: relative;
+  top: 2rem;
+}
+.text h1 {
+  margin-top: 140px;
+  font-size: 60px;
+  padding-left: 80px;
+}
+
+.text p {
+  padding-left: 80px;
+  font-size: 35px;
+}
+.search-bar {
+  padding-left: 80px;
+}
+.search-in {
+  border-radius: 25px 0 0 25px !important;
+}
+.search-button {
+  border-radius: 0 25px 25px 0 !important;
+  background-color: #563d7c;
+  color: white;
+}
+
+.mycustom {
+  border: solid 1px green;
+  position: relative;
+}
+.mycustom input[type="text"] {
+  border: none;
+  width: 100%;
+  padding-right: 123px;
+}
+.mycustom .input-group-prepend {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 9;
+}

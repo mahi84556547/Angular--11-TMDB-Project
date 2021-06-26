@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #563d7c;
+width: 100%;
+}
+.nav-item .nav-link
+{
+color: white;
+margin-left: 5px;
+text-transform: uppercase;
+}
+.navbar-brand{
+color: white;
+padding-left: 80px;
+}
+.dropdown-menu{
+  min-width: 100px !important;
+}
+.navbar-inverse {
+  background-color: rgb(240, 145, 21) !important;
+}

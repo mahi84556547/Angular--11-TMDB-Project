@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+
+<!-- bg-cover start -->
+<div class="bg">
+  <div class="text text-white">
+    <h1>Welcome.</h1>
+    <p>Millions of movies, TV shows and people to discover. Explore now.</p>
+  </div>
+  <!-- bg-cover end -->
+  <!-- search start -->
+
+  <form>
+    <div class="col-lg-11 search-bar">
+      <div class="input-group">
+        <input type="text" class="form-control search-in rounded-0" id="validationDefaultUsername"
+        placeholder="Search for a movie, tv show, person....."
+          aria-describedby="inputGroupPrepend2" required>
+        <div class="input-group-prepend">
+          <input type="submit" vlaue="Search"  class="btn  search-button btn-sm px-4 rounded-0" id="inputGroupPrepend2">
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- search end -->
+
+<!-- container || movies card start -->
+<div class="container mt-4 card-container">
+  <div class="row card-deck card-columns">
+    <!-- ng for data start -->
+    <div class="mx-auto align-content-center" *ngFor="let movie of upcoming">
+      <!-- card start -->
+      <div class="card mt-2 p-2" style="width: 15rem">
+        <div class="card-body">
+          <div class="card-img">
+            <img src="http://image.tmdb.org/t/p/w200/{{ movie.poster_path }}" class="img-fluid" />
+          </div>
+          <h5 class="card-title text-truncate text-success mt-2">
+            Movie : {{ movie.title }}
+          </h5>
+          <p class="card-text text-truncate">{{ movie.overview }}</p>
+          <p>Rel.Date : {{ movie.release_date }}</p>
+          <p>Popularity : {{ movie.popularity }}</p>
+        </div>
+      </div>
+      <!-- card end -->
+    </div>
+    <!-- ng for data end -->
+  </div>
+</div>
+<!-- container end || movies card end -->
+
+
+
+
+

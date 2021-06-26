@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+
+      }
+
+/* login & Registration css start */
+      .card-header:first-child {
+        border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
+      }
+      .card-header {
+        position: relative;
+        padding: 1.3rem 1.3rem;
+        border-bottom: none;
+        background-color: white;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+        z-index: 2;
+      }
+
+      .card-heading{
+        font-size: 30px;
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: none;
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+        border-radius: 1rem;
+      }
+      .bg-gray-100 {
+        background-color: #f8f9fa !important;
+      }
+
+      .text-primary {
+        color: #563d7c !important;
+      }
+      .submit-button{
+        background-color: #563d7c !important;
+        color: white;
+      }
+      .submit-button:hover{
+color: white;
+      }
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .text-muted {
+        color: #6c757d !important;
+      }
+      .lead {
+        font-size: 1.125rem;
+        font-weight: 300;
+      }
+      .text-sm {
+        font-size: .7875rem !important;
+      }
+      h3, .h3 {
+        font-size: 1.575rem;
+      }
+      .side-img {
+        margin-left: 140px;
+      }
+/* login & Registration css end */

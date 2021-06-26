@@ -1,0 +1,32 @@
+<div class="nav mb-5">
+  <app-navbar></app-navbar>
+
+</div>
+<h3 class="text-center pt-5 fa-3x">Top Rated Movies</h3>
+<!-- container || movies card start -->
+  <div class="container mt-4 card-container">
+    <div class="row card-deck card-columns">
+      <div *ngIf="loading" class="spinner-border  mx-auto" role="status" style="width: 3rem; height: 3rem;margin-top: 9rem;" >
+      </div>
+      <!-- ng for data start -->
+      <div class="mx-auto align-content-center" *ngFor="let movie of toprated">
+        <!-- card start -->
+        <div class="card p-2 mt-2" style="width: 15rem">
+          <div class="card-body">
+            <div class="card-img">
+              <img src="http://image.tmdb.org/t/p/w200/{{ movie.poster_path }}" class="img-fluid" />
+            </div>
+            <h5 class="card-title text-truncate text-success mt-2">
+              Movie : {{ movie.title }}
+            </h5>
+            <p class="card-text text-truncate">{{ movie.overview }}</p>
+            <p>Rel.Date : {{ movie.release_date }}</p>
+            <p>Popularity : {{ movie.popularity }}</p>
+          </div>
+        </div>
+        <!-- card end -->
+      </div>
+      <!-- ng for data end -->
+    </div>
+  </div>
+  <!-- container end || movies card end -->

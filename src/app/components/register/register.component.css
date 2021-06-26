@@ -1,0 +1,10 @@
+
+input.ng-invalid.ng-touched {
+  border-left: red 10px solid;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+input.ng-valid {
+  border-left: rgb(12, 235, 12) 10px solid;
+}
